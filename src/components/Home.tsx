@@ -1,9 +1,14 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import { useEffect } from "react";
 import { GitHubInsights } from "./GitHubInsights";
 import { Section } from "./Section";
 import { Button } from "./ui/button";
 
 export function Home() {
+  useEffect(() => {
+    document.title = "Robbie Thomlinson - Software Engineer";
+  }, []);
+
   return (
     <main className="container mx-auto px-4 py-8">
       <div className="text-center space-y-6">
